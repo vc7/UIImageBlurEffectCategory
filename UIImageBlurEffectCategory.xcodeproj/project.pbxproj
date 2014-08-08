@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BFA3DE20199524D00045DF6C /* UIImageBlurEffectCategory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFA3DE1F199524D00045DF6C /* UIImageBlurEffectCategory.h */; };
-		BFA3DE22199524D00045DF6C /* UIImageBlurEffectCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3DE21199524D00045DF6C /* UIImageBlurEffectCategory.m */; };
+		BFA3DE35199529B20045DF6C /* UIImage+APLBlurEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3DE34199529B20045DF6C /* UIImage+APLBlurEffect.m */; };
+		BFA3DE9A19952C360045DF6C /* UIImageBlurEffectCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA3DE1F199524D00045DF6C /* UIImageBlurEffectCategory.h */; };
+		BFA3DE9B19952C360045DF6C /* UIImage+APLBlurEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA3DE33199529B20045DF6C /* UIImage+APLBlurEffect.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,9 +29,10 @@
 /* Begin PBXFileReference section */
 		BFA3DE1C199524D00045DF6C /* libUIImageBlurEffectCategory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIImageBlurEffectCategory.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA3DE1F199524D00045DF6C /* UIImageBlurEffectCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageBlurEffectCategory.h; sourceTree = "<group>"; };
-		BFA3DE21199524D00045DF6C /* UIImageBlurEffectCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageBlurEffectCategory.m; sourceTree = "<group>"; };
 		BFA3DE27199524D00045DF6C /* UIImageBlurEffectCategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImageBlurEffectCategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA3DE2A199524D00045DF6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA3DE33199529B20045DF6C /* UIImage+APLBlurEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+APLBlurEffect.h"; sourceTree = "<group>"; };
+		BFA3DE34199529B20045DF6C /* UIImage+APLBlurEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+APLBlurEffect.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				BFA3DE1F199524D00045DF6C /* UIImageBlurEffectCategory.h */,
-				BFA3DE21199524D00045DF6C /* UIImageBlurEffectCategory.m */,
+				BFA3DE33199529B20045DF6C /* UIImage+APLBlurEffect.h */,
+				BFA3DE34199529B20045DF6C /* UIImage+APLBlurEffect.m */,
 			);
 			path = UIImageBlurEffectCategory;
 			sourceTree = "<group>";
@@ -95,6 +99,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		BFA3DE9919952C2E0045DF6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3DE9A19952C360045DF6C /* UIImageBlurEffectCategory.h in Headers */,
+				BFA3DE9B19952C360045DF6C /* UIImage+APLBlurEffect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		BFA3DE1B199524D00045DF6C /* UIImageBlurEffectCategory */ = {
 			isa = PBXNativeTarget;
@@ -103,6 +119,7 @@
 				BFA3DE18199524D00045DF6C /* Sources */,
 				BFA3DE19199524D00045DF6C /* Frameworks */,
 				BFA3DE1A199524D00045DF6C /* CopyFiles */,
+				BFA3DE9919952C2E0045DF6C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -180,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA3DE22199524D00045DF6C /* UIImageBlurEffectCategory.m in Sources */,
+				BFA3DE35199529B20045DF6C /* UIImage+APLBlurEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
